@@ -7,7 +7,7 @@ App para realizar a consulta de bulários no sistema gov.br (ANVISA)
 Esse projeto foi realizado utilizando Flutter como Framework e tem o objetivo de realizar consultas diretamente na Anvisa e retornar os dados formatados e pronto para uso.
 
 ## Implementado até agora:
-# Searchbox com pesquisa direto na API da anvisa
-# RequestClient realizando autenticação nas API's e trazendo os dados
-# Montados os objetos das requests
-# Collection postman criada
+### Searchbox com pesquisa direto na API da anvisa
+### RequestClient realizando autenticação nas API's e trazendo os dados
+### Montados os objetos das requests
+### Collection postman criada

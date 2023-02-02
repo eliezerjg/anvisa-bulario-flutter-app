@@ -1,7 +1,7 @@
 # Consulta Bulário
 
-
-    <img src="https://i.postimg.cc/PqnSV76M/consulta-anvisa.png"/>
+<img src="https://i.postimg.cc/PqnSV76M/consulta-anvisa.png"/>
+    
 
     Objetivo: Para realizar a consulta de bulários no sistema gov.br (ANVISA)
 

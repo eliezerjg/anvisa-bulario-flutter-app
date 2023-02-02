@@ -1,7 +1,7 @@
 # Consulta dados Medicamentos - Anvisa (bulário e etc)
-
-<img class="align-center" src="https://i.postimg.cc/PqnSV76M/consulta-anvisa.png"/>
-    
+<p align="center">
+<img src="https://i.postimg.cc/PqnSV76M/consulta-anvisa.png"/>
+</p> 
 
     Objetivo: Para realizar a consulta de bulários no sistema gov.br (ANVISA)
 

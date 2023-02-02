@@ -3,7 +3,7 @@
 <img src="https://i.postimg.cc/PqnSV76M/consulta-anvisa.png"/>
 </p> 
 
-    Objetivo: Para realizar a consulta de bulários no sistema gov.br (ANVISA)
+    Objetivo: Para realizar a consulta de bulários no sistema gov.br (ANVISA), coletar dados sobre algum medicamento de forma prática e fácil através da API do governo.
 
   
 ## Sobre

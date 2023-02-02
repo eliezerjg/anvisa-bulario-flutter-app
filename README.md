@@ -1,13 +1,10 @@
 # Consulta Bulário
 
-  <hr/>
 
-    <img style="max-width: 200px; max-height: 600px" src="https://i.postimg.cc/PqnSV76M/consulta-anvisa.png"/>
+    <img src="https://i.postimg.cc/PqnSV76M/consulta-anvisa.png"/>
 
     Objetivo: Para realizar a consulta de bulários no sistema gov.br (ANVISA)
 
-  <hr/>
-  <BR><BR>
   
 ## Sobre
 

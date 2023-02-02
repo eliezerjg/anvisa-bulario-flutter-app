@@ -1,0 +1,845 @@
+{
+	"info": {
+		"_postman_id": "d44b49aa-e719-41c7-9585-71b3a66cfe1f",
+		"name": "Anvisa consulta lista produtos",
+		"description": "HAR To Postman Generated Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24526626"
+	},
+	"item": [
+		{
+			"name": "consultas.anvisa.gov.br/api/produto/listaMedicamentoBula/paracetamol",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7"
+					},
+					{
+						"key": "Authorization",
+						"value": "Guest"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Host",
+						"value": "consultas.anvisa.gov.br"
+					},
+					{
+						"key": "If-Modified-Since",
+						"value": "Mon, 26 Jul 1997 05:00:00 GMT"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://consultas.anvisa.gov.br/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not_A Brand\";v=\"99\", \"Google Chrome\";v=\"109\", \"Chromium\";v=\"109\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Windows\""
+					}
+				],
+				"url": {
+					"raw": "{{baseURL1}}/api/produto/listaMedicamentoBula/paracetamol",
+					"host": [
+						"{{baseURL1}}"
+					],
+					"path": [
+						"api",
+						"produto",
+						"listaMedicamentoBula",
+						"paracetamol"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "successfully / 200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip, deflate, br"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "pt-PT,pt;q=0.9,en-US;q=0.8,en;q=0.7"
+							},
+							{
+								"key": "Authorization",
+								"value": "Guest"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Host",
+								"value": "consultas.anvisa.gov.br"
+							},
+							{
+								"key": "If-Modified-Since",
+								"value": "Mon, 26 Jul 1997 05:00:00 GMT"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Referer",
+								"value": "https://consultas.anvisa.gov.br/"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not_A Brand\";v=\"99\", \"Google Chrome\";v=\"109\", \"Chromium\";v=\"109\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?0"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Windows\""
+							}
+						],
+						"url": {
+							"raw": "{{baseURL1}}/api/produto/listaMedicamentoBula/paracetamol",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"api",
+								"produto",
+								"listaMedicamentoBula",
+								"paracetamol"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "max-age=86400"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Length",
+							"value": "313"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 30 Jan 2023 22:41:21 GMT"
+						},
+						{
+							"key": "Expires",
+							"value": "Tue, 31 Jan 2023 22:41:21 GMT"
+						},
+						{
+							"key": "Feature-Policy",
+							"value": "geolocation 'none'; midi 'self'; notifications 'self'; push 'self'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'self'; vibrate 'none'; fullscreen 'self'; payment 'self'"
+						},
+						{
+							"key": "Public-Key-Pins",
+							"value": "pin-sha256=\"Btf8IdD35w1CeFjeguRmvqE6phOeZ4pefINCvapVWnE=\"; pin-sha256=\"prr9mWgg62e0OW8qhieg9vQAlg/F2/U2huGg74e7Qpg=\"; max-age=2592000; includeSubDomains"
+						},
+						{
+							"key": "Public-Key-Pins",
+							"value": "pin-sha256=\"Btf8IdD35w1CeFjeguRmvqE6phOeZ4pefINCvapVWnE=\"; pin-sha256=\"prr9mWgg62e0OW8qhieg9vQAlg/F2/U2huGg74e7Qpg=\"; max-age=2592000; includeSubDomains"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer-when-downgrade"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubdomains;"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubdomains; preload"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Undertow/1"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						}
+					],
+					"cookie": [],
+					"body": "[\n \"CARISOPRODOL + DICLOFENACO DE SÓDIO + PARACETAMOL+ CAFEÍNA\",\n \"Cloridrato de tramadol + paracetamol\",\n \"FUNED PARACETAMOL\",\n \"FURP - PARACETAMOL\",\n \"IQUEGO - PARACETAMOL\",\n \"LFM-PARACETAMOL\",\n \"PARACETAMOL\",\n \"PARACETAMOL + CLORIDRATO DE PSEUDOEFEDRINA\",\n \"PARACETAMOL + FOSFATO DE CODEÍNA\",\n \"PARACETAMOL+FOSFATO DE CODEINA\"\n]"
+				}
+			]
+		},
+		{
+			"name": "consultas.anvisa.gov.br/api/consulta/genericos?count=10&filter[nomeProduto]=CARISOPRODOL   DICLOFENACO DE SÓDIO   PARACETAMOL  CAFEÍNA&page=1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,pt;q=0.8"
+					},
+					{
+						"key": "Authorization",
+						"value": "Guest"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Host",
+						"value": "consultas.anvisa.gov.br"
+					},
+					{
+						"key": "If-Modified-Since",
+						"value": "Mon, 26 Jul 1997 05:00:00 GMT"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://consultas.anvisa.gov.br/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not_A Brand\";v=\"99\", \"Google Chrome\";v=\"109\", \"Chromium\";v=\"109\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?1"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Android\""
+					}
+				],
+				"url": {
+					"raw": "{{baseURL1}}/api/consulta/genericos?count=10&filter%5BnomeProduto%5D=CARISOPRODOL+%2B+DICLOFENACO+DE+S%C3%93DIO+%2B+PARACETAMOL%2B+CAFE%C3%8DNA&page=1",
+					"host": [
+						"{{baseURL1}}"
+					],
+					"path": [
+						"api",
+						"consulta",
+						"genericos"
+					],
+					"query": [
+						{
+							"key": "count",
+							"value": "10"
+						},
+						{
+							"key": "filter%5BnomeProduto%5D",
+							"value": "CARISOPRODOL+%2B+DICLOFENACO+DE+S%C3%93DIO+%2B+PARACETAMOL%2B+CAFE%C3%8DNA"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "successfully / 200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip, deflate, br"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9,pt;q=0.8"
+							},
+							{
+								"key": "Authorization",
+								"value": "Guest"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Host",
+								"value": "consultas.anvisa.gov.br"
+							},
+							{
+								"key": "If-Modified-Since",
+								"value": "Mon, 26 Jul 1997 05:00:00 GMT"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Referer",
+								"value": "https://consultas.anvisa.gov.br/"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not_A Brand\";v=\"99\", \"Google Chrome\";v=\"109\", \"Chromium\";v=\"109\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?1"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Android\""
+							}
+						],
+						"url": {
+							"raw": "{{baseURL1}}/api/consulta/genericos?count=10&filter%5BnomeProduto%5D=CARISOPRODOL+%2B+DICLOFENACO+DE+S%C3%93DIO+%2B+PARACETAMOL%2B+CAFE%C3%8DNA&page=1",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"api",
+								"consulta",
+								"genericos"
+							],
+							"query": [
+								{
+									"key": "count",
+									"value": "10"
+								},
+								{
+									"key": "filter%5BnomeProduto%5D",
+									"value": "CARISOPRODOL+%2B+DICLOFENACO+DE+S%C3%93DIO+%2B+PARACETAMOL%2B+CAFE%C3%8DNA"
+								},
+								{
+									"key": "page",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "max-age=86400"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Length",
+							"value": "468"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 02 Feb 2023 17:48:42 GMT"
+						},
+						{
+							"key": "Expires",
+							"value": "Fri, 03 Feb 2023 17:48:42 GMT"
+						},
+						{
+							"key": "Feature-Policy",
+							"value": "geolocation 'none'; midi 'self'; notifications 'self'; push 'self'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'self'; vibrate 'none'; fullscreen 'self'; payment 'self'"
+						},
+						{
+							"key": "Public-Key-Pins",
+							"value": "pin-sha256=\"Btf8IdD35w1CeFjeguRmvqE6phOeZ4pefINCvapVWnE=\"; pin-sha256=\"prr9mWgg62e0OW8qhieg9vQAlg/F2/U2huGg74e7Qpg=\"; max-age=2592000; includeSubDomains"
+						},
+						{
+							"key": "Public-Key-Pins",
+							"value": "pin-sha256=\"Btf8IdD35w1CeFjeguRmvqE6phOeZ4pefINCvapVWnE=\"; pin-sha256=\"prr9mWgg62e0OW8qhieg9vQAlg/F2/U2huGg74e7Qpg=\"; max-age=2592000; includeSubDomains"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer-when-downgrade"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubdomains;"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubdomains; preload"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Undertow/1"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		},
+		{
+			"name": "consultas.anvisa.gov.br/api/consulta/medicamento/produtos/25351631744201778",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.9,pt;q=0.8"
+					},
+					{
+						"key": "Authorization",
+						"value": "Guest"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Connection",
+						"value": "keep-alive"
+					},
+					{
+						"key": "Host",
+						"value": "consultas.anvisa.gov.br"
+					},
+					{
+						"key": "If-Modified-Since",
+						"value": "Mon, 26 Jul 1997 05:00:00 GMT"
+					},
+					{
+						"key": "Pragma",
+						"value": "no-cache"
+					},
+					{
+						"key": "Referer",
+						"value": "https://consultas.anvisa.gov.br/"
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty"
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors"
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-origin"
+					},
+					{
+						"key": "User-Agent",
+						"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not_A Brand\";v=\"99\", \"Google Chrome\";v=\"109\", \"Chromium\";v=\"109\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?1"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"Android\""
+					}
+				],
+				"url": {
+					"raw": "{{baseURL1}}/api/consulta/medicamento/produtos/25351631744201778",
+					"host": [
+						"{{baseURL1}}"
+					],
+					"path": [
+						"api",
+						"consulta",
+						"medicamento",
+						"produtos",
+						"25351631744201778"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "successfully / 200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json, text/plain, */*"
+							},
+							{
+								"key": "Accept-Encoding",
+								"value": "gzip, deflate, br"
+							},
+							{
+								"key": "Accept-Language",
+								"value": "en-US,en;q=0.9,pt;q=0.8"
+							},
+							{
+								"key": "Authorization",
+								"value": "Guest"
+							},
+							{
+								"key": "Cache-Control",
+								"value": "no-cache"
+							},
+							{
+								"key": "Connection",
+								"value": "keep-alive"
+							},
+							{
+								"key": "Host",
+								"value": "consultas.anvisa.gov.br"
+							},
+							{
+								"key": "If-Modified-Since",
+								"value": "Mon, 26 Jul 1997 05:00:00 GMT"
+							},
+							{
+								"key": "Pragma",
+								"value": "no-cache"
+							},
+							{
+								"key": "Referer",
+								"value": "https://consultas.anvisa.gov.br/"
+							},
+							{
+								"key": "Sec-Fetch-Dest",
+								"value": "empty"
+							},
+							{
+								"key": "Sec-Fetch-Mode",
+								"value": "cors"
+							},
+							{
+								"key": "Sec-Fetch-Site",
+								"value": "same-origin"
+							},
+							{
+								"key": "User-Agent",
+								"value": "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Mobile Safari/537.36"
+							},
+							{
+								"key": "sec-ch-ua",
+								"value": "\"Not_A Brand\";v=\"99\", \"Google Chrome\";v=\"109\", \"Chromium\";v=\"109\""
+							},
+							{
+								"key": "sec-ch-ua-mobile",
+								"value": "?1"
+							},
+							{
+								"key": "sec-ch-ua-platform",
+								"value": "\"Android\""
+							}
+						],
+						"url": {
+							"raw": "{{baseURL1}}/api/consulta/medicamento/produtos/25351631744201778",
+							"host": [
+								"{{baseURL1}}"
+							],
+							"path": [
+								"api",
+								"consulta",
+								"medicamento",
+								"produtos",
+								"25351631744201778"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "Text",
+					"header": [
+						{
+							"key": "Cache-Control",
+							"value": "max-age=86400"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "public"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=UTF-8"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 02 Feb 2023 18:13:00 GMT"
+						},
+						{
+							"key": "Expires",
+							"value": "Fri, 03 Feb 2023 18:13:00 GMT"
+						},
+						{
+							"key": "Feature-Policy",
+							"value": "geolocation 'none'; midi 'self'; notifications 'self'; push 'self'; sync-xhr 'none'; microphone 'none'; camera 'none'; magnetometer 'none'; gyroscope 'none'; speaker 'self'; vibrate 'none'; fullscreen 'self'; payment 'self'"
+						},
+						{
+							"key": "Public-Key-Pins",
+							"value": "pin-sha256=\"Btf8IdD35w1CeFjeguRmvqE6phOeZ4pefINCvapVWnE=\"; pin-sha256=\"prr9mWgg62e0OW8qhieg9vQAlg/F2/U2huGg74e7Qpg=\"; max-age=2592000; includeSubDomains"
+						},
+						{
+							"key": "Public-Key-Pins",
+							"value": "pin-sha256=\"Btf8IdD35w1CeFjeguRmvqE6phOeZ4pefINCvapVWnE=\"; pin-sha256=\"prr9mWgg62e0OW8qhieg9vQAlg/F2/U2huGg74e7Qpg=\"; max-age=2592000; includeSubDomains"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "no-referrer-when-downgrade"
+						},
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubdomains;"
+						},
+						{
+							"key": "Strict-Transport-Security",
+							"value": "max-age=63072000; includeSubdomains; preload"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "SAMEORIGIN"
+						},
+						{
+							"key": "X-Permitted-Cross-Domain-Policies",
+							"value": "none"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Undertow/1"
+						},
+						{
+							"key": "X-XSS-Protection",
+							"value": "1; mode=block"
+						}
+					],
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseURL1",
+			"value": "https://consultas.anvisa.gov.br",
+			"type": "any"
+		}
+	]
+}

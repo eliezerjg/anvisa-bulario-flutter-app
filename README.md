@@ -12,7 +12,10 @@ Esse projeto foi realizado utilizando Flutter como Framework e tem o objetivo de
 
 ## Implementado até agora:
 
+#Tela:
 <p>Searchbox com pesquisa direto na API da anvisa</p>
+
+#Funcionalidades / Integração:
 <p>RequestClient realizando autenticação nas API's e trazendo os dados</p>
 <p>Montados os objetos das requests</p>
 <p>Collection postman criada</p>

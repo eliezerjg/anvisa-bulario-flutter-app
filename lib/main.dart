@@ -2,11 +2,10 @@
 
 import 'package:animated_search_bar/animated_search_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:untitled/requestClient.dart';
-import 'medicCards.dart';
+import 'package:untitled/RequestClient.dart';
 
-Future<void> main() async {
-  runApp(MyApp());
+main() {
+   runApp(MyApp());
 }
 
 class MyApp extends StatefulWidget {
@@ -16,13 +15,34 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String searchText = "";
-  TextEditingController _controller =
-  TextEditingController(text: "Pesquisa Anvisa");
+  final TextEditingController _controller =
+  TextEditingController(text: "Consulta - Medicamentos Anvisa");
+  List produtos = [];
+
+  void _performSearch(String value) {
+    RequestClient.getProducts(value).then((resultados) => {
+      setState(() {
+        searchText = value;
+        produtos.clear();
+        produtos.addAll(resultados);
+      })
+    });
+  }
+
+  void getScreenDados(String produto){
+    RequestClient
+        .getFirstItemFromListOfProducts(produto)
+              .then((processo) => {
+                RequestClient.getDetailOfProduct(processo).then((detalhe) => {
+                  print(detalhe)
+                })
+              }
+    );
+  }
 
 
   @override
   Widget build(BuildContext context) {
-
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
@@ -32,7 +52,7 @@ class _MyAppState extends State<MyApp> {
             labelStyle: TextStyle(fontSize: 16),
             searchStyle: TextStyle(color: Colors.white),
             cursorColor: Colors.white,
-            searchDecoration: InputDecoration(
+            searchDecoration: const InputDecoration(
               hintText: "Search",
               alignLabelWithHint: true,
               fillColor: Colors.white,
@@ -51,19 +71,39 @@ class _MyAppState extends State<MyApp> {
         body: Padding(
           padding: EdgeInsets.all(16),
           child: Column(
+
             children: [
               AnimatedSearchBar(
-                label: "Search Something Here",
-                onChanged: (value) {
-                  print("value on Change");
-                  setState(() {
-                    searchText = value;
-                  });
+                label: "Digite algo aqui para pesquisar...",
+                onChanged: (value) { _performSearch(value);
                 },
               ),
-              medicCards(List.generate(10, (index) => index as Dynamic))
+              Expanded(
+                flex:2,
+                child: ListView.separated(
+                  itemCount: produtos.length,
+                  separatorBuilder: (BuildContext context, int index) => const Divider(),
+                  itemBuilder: (BuildContext context, int index) {
+                    String produto = produtos[index];
+                    return ListTile(
+                      title: Text(produto),
+                        leading: Icon(Icons.medical_information),
+                        trailing: IconButton(
+                          icon: Icon(Icons.arrow_right),
+                          onPressed: () {
+                            getScreenDados(produto);
+                          },
+                        )
+                    );
+                  },
+                ),
+              )
+
             ],
           ),
+
+
+
         ),
       ),
     );

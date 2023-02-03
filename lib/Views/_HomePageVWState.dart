@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 import '../RequestClient.dart';
 import 'DetailProductVW.dart';
+import 'LoadingBarVW.dart';
 
 class HomePageVW extends StatefulWidget {
   @override
@@ -38,7 +39,8 @@ class _HomePageVWState extends State<HomePageVW> {
                     context,
                     MaterialPageRoute(builder: (context) =>  DetailProductVW(dadosMedicamento)),
                   )})
-          });
+          }
+    );
   }
 
   @override
@@ -68,6 +70,7 @@ class _HomePageVWState extends State<HomePageVW> {
             },
           ),
         ),
+
         body: Padding(
           padding: EdgeInsets.all(16),
           child: Column(
@@ -99,7 +102,7 @@ class _HomePageVWState extends State<HomePageVW> {
                 ),
               )
             ],
-          ),
+        ),
         ),
       ),
     );

@@ -32,6 +32,11 @@ class _DetailProductVWState extends State<DetailProductVW> {
 
   final TextEditingController _controller = TextEditingController(text: "Consulta - Medicamentos Anvisa");
 
+  String toSentenceCase(String input) {
+    final result = input.replaceAllMapped(RegExp(r'([A-Z])'), (match) => ' ${match.group(0)}');
+    return '${result[0].toUpperCase()}${result.substring(1)}';
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -56,6 +61,9 @@ class _DetailProductVWState extends State<DetailProductVW> {
                     if(valor is String){
                       String vl = valor as String;
                       valor = valor.substring(0, vl.length > 10 ? 10 : vl.length) + "(...)";
+                    }
+                    if(chave is String){
+                      chave = toSentenceCase(chave);
                     }
 
                     return ListTile(

@@ -2,7 +2,7 @@
 import 'dart:collection';
 
 import 'package:flutter/material.dart';
-import 'package:untitled/DTOs/ProdutoDetailDTO.dart';
+import 'package:untitled/DTOs/ProductDetailDTO.dart';
 
 
 

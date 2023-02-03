@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'dart:io';
 
 
-import 'package:untitled/DTOs/ProdutoDetailDTO.dart';
+import 'package:untitled/DTOs/ProductDetailDTO.dart';
 
 import 'DTOS/ListOfProductsDTO.dart';
 

@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 
 import '../RequestClient.dart';
 import 'DetailProductVW.dart';
-import 'LoadingBarVW.dart';
 
 class HomePageVW extends StatefulWidget {
   @override

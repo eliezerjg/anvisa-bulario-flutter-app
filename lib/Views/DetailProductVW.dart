@@ -3,6 +3,7 @@ import 'dart:collection';
 
 import 'package:flutter/material.dart';
 import 'package:untitled/DTOs/ProductDetailDTO.dart';
+import 'package:untitled/Views/HomePageVW.dart';
 
 
 
@@ -40,10 +41,20 @@ class _DetailProductVWState extends State<DetailProductVW> {
 
   @override
   Widget build(BuildContext context) {
+    String nome = _detail!.nomeComercial!;
+    
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Detalhes medicamento'),
+
+          title:  Text('Medicamento ' + toSentenceCase(nome.toLowerCase())),
+          leading: GestureDetector(
+            child: Icon( Icons.arrow_back_ios, color: Colors.white ),
+            onTap: () {
+              Navigator.pop(context);
+            } ,
+          ) ,
+
         ),
         body: Padding(
           padding: EdgeInsets.all(16),

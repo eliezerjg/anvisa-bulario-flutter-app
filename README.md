@@ -16,6 +16,7 @@ Esse projeto foi realizado utilizando Flutter como Framework e tem o objetivo de
 # Tela:
 <p>Searchbox com pesquisa direto na API da anvisa</p>
 <p>ListView com as opções de pesquisa e botões para levar ao detalhamento do medicamento.</p>
+<p>Tela de detalhamento de medicamento</p>
 
 # Funcionalidades / Integração:
 <p>RequestClient realizando autenticação nas API's e trazendo os dados</p>

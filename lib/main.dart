@@ -24,7 +24,9 @@ class _MyAppState extends State<MyApp> {
       setState(() {
         searchText = value;
         produtos.clear();
-        produtos.addAll(resultados);
+        if(!resultados[0].contains("Error")) {
+          produtos.addAll(resultados);
+        }
       })
     });
   }

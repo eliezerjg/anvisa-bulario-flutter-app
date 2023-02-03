@@ -2,6 +2,8 @@ import 'dart:convert';
 import 'dart:io';
 
 
+import 'package:untitled/DTOs/ProdutoDetailDTO.dart';
+
 import 'DTOS/ListOfProductsDTO.dart';
 
 class RequestClient{
@@ -43,8 +45,8 @@ class RequestClient{
   }
 
 
-  static Future<String> getDetailOfProduct(String processo) async {
-    var url = 'consultas.anvisa.gov.br/api/consulta/medicamento/produtos/$processo';
+  static Future<ProdutoDetailDTO> getDetailOfProduct(String processo) async {
+    var url = 'https://consultas.anvisa.gov.br/api/consulta/medicamento/produtos/$processo';
     HttpClient client = HttpClient();
 
     client.badCertificateCallback = ((X509Certificate cert, String host, int port) => true);
@@ -56,7 +58,8 @@ class RequestClient{
     var responseBody = await response.transform(utf8.decoder).join();
     final body = json.decode(responseBody);
 
-    return body['principioAtivo'];
+    ProdutoDetailDTO produto = ProdutoDetailDTO.fromJson(body);
+    return produto;
   }
 
 

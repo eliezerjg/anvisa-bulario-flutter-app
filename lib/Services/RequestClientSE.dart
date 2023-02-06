@@ -6,7 +6,10 @@ import 'package:untitled/DTOs/ProductDetailDTO.dart';
 
 
 class RequestClient{
-
+  static var authHeaders = {
+    'Authorization': 'Guest',
+    'Host': 'consultas.anvisa.gov.br'
+  };
 
   static Future<List<String>> getProducts(String produto) async {
     var url = 'https://consultas.anvisa.gov.br/api/produto/listaMedicamentoBula/$produto';
@@ -14,13 +17,12 @@ class RequestClient{
 
     client.badCertificateCallback = ((X509Certificate cert, String host, int port) => true);
     HttpClientRequest request = await client.getUrl(Uri.parse(url));
-    request.headers.set('Authorization', 'Guest');
+    authHeaders.forEach((key, value) => request.headers.add(key, value));
+
     var response = await request.close();
     var value = await utf8.decodeStream(response);
     value = value.replaceAll("\"", "").replaceAll("[", "").replaceAll("]", "");
     return value.split(",");
-
-
   }
 
 
@@ -29,8 +31,7 @@ class RequestClient{
     var client = HttpClient();
     client.badCertificateCallback = ((X509Certificate cert, String host, int port) => true);
     var request = await client.getUrl(Uri.parse(url));
-    request.headers.set('Authorization', 'Guest');
-    request.headers.set('Host', 'consultas.anvisa.gov.br');
+    authHeaders.forEach((key, value) => request.headers.add(key, value));
     var response = await request.close();
     var responseBody = await utf8.decodeStream(response);
     var body = jsonDecode(responseBody);
@@ -43,8 +44,7 @@ class RequestClient{
     var client = HttpClient();
     client.badCertificateCallback = ((X509Certificate cert, String host, int port) => true);
     var request = await client.getUrl(Uri.parse(url));
-    request.headers.set('Authorization', 'Guest');
-    request.headers.set('Host', 'consultas.anvisa.gov.br');
+    authHeaders.forEach((key, value) => request.headers.add(key, value));
     var response = await request.close();
     var responseBody = await utf8.decodeStream(response);
     var body = jsonDecode(responseBody);

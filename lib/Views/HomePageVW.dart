@@ -3,7 +3,7 @@ import 'package:animated_search_bar/animated_search_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../RequestClient.dart';
+import '../Services/RequestClientSE.dart';
 import 'DetailProductVW.dart';
 
 class HomePageVW extends StatefulWidget {
